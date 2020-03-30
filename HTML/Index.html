@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV-TranTrungHieu</title>
+    <link rel="stylesheet" href="../CSS/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="box-img sticky-top">
+                <div class="txt-name">
+                    <h2>Trần Trung Hiếu</h2>
+                    <i style="font-size: 20px;color: black">(Thực tập sinh front end)</i>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 ">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#txt-hv">Học Vấn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#txt-mt">Mục tiêu thực tập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#box-skill">Kỹ năng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#txt-kn">Kinh nghiệm </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#txt-ttcn">Thông tin cá nhân</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="box-content">
+                <div class="content-CV">
+                    <div id="txt-hv" class=" txt-hv">
+                        <h2>Học Vấn </h2>
+                        <p>
+                            <span> Trường: Cao đằng nghề bách khoa hà nội</span> <br>
+                            <span>Khoa: Công nghệ thông tin</span> <br>
+                            <span>Là: Sinh viên năm cuối</span>
+                        </p>
+                    </div>
+                    <div id="txt-mt" class="txt-mt">
+                        <h2>Mục tiêu thực tập</h2>
+                        <p>
+                         <span><i class="fas fa-check"></i>  Mong muốn học hỏi được nhiều kinh nghiệp ở môi trường làm việc chuyên nghiệp , năng động</span>    <br>
+                         <span><i class="fas fa-check"></i> Sau khóa thực tập tại công ty , muốn trở thành nhân viên chính thức</span>
+                        </p>
+                    </div>
+                    <div id="box-skill" class="box-skill">
+                        <h2>Kỹ năng</h2>
+                        <div class=" txt-skill">
+                            <div class="skill col-md-4 ">
+                                <h4>Ngôn ngữ lập trình</h4>
+                                <span>
+                                <i class="fas fa-check"></i> HTML
+                            </span> <br>
+                                <span>
+                               <i class="fas fa-check"></i> CSS
+                            </span> <br>
+                                <span>
+                                <i class="fas fa-check"></i>PHP
+                            </span>
+                            </div>
+                            <div class="skill col-md-4 ">
+                                <h4>Cơ sở dữ liệu</h4>
+                                <span>
+                              <i class="fas fa-check"></i>  MySQL
+                            </span>
+                            </div>
+                            <div class="skill col-md-4">
+                                <h4>Khung và nền tảng</h4>
+                                <span>
+                              <i class="fas fa-check"></i>  Bootstrap
+                            </span> <br>
+                                <span>
+                              <i class="fas fa-check"></i>  Jquery
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="txt-kn" class="txt-kn aos-item">
+                        <h2>Kinh nghiêp làm việc</h2>
+                        <span style="display: block">
+                           <i class="fas fa-check"></i> Chưa có
+                        </span>
+                    </div>
+                    <div id="txt-ttcn" class="txt-ttcn ">
+                        <h2>Thông tin cá nhân</h2>
+                        <p>
+                            <span><i class="fas fa-mars"></i> Họ và tên: Trần Trung Hiếu</span><br>
+                            <span><i class="fas fa-birthday-cake"></i>Ngày sinh: 05/05/1999</span><br>
+                            <span><i class="fas fa-map-marker-alt"></i>Địa chỉ: 13 Đường Lĩnh Nam, Vĩnh Hưng, Hoàng Mai, Hà Nội</span><br>
+                            <span> <i class="fas fa-mobile-alt"></i>Số điện thoại: 0399658386</span><br>
+                            <span><i class="fas fa-envelope"></i> Email: hieu050599@gmail.com</span>  <br>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        var lastScrollTop = 200;
+        $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+            console.log(st);
+            if (st > lastScrollTop){
+                $('.bg-dark').addClass('position-fixed');
+            } else {
+                $('.bg-dark').removeClass('position-fixed');
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>
